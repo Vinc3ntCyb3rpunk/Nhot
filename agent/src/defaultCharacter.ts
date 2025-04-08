@@ -1,10 +1,12 @@
 import { type Character, ModelProviderName } from "@elizaos/core";
+import twitterPlugin from "@elizaos-plugins/client-twitter"
+import { advancedFlowPlugin } from "@elizaos-plugins/plugin-flow-advanced";
 
 export const defaultCharacter: Character = {
-    name: "Eliza",
+    name: "Flow-bot",
     username: "eliza",
-    plugins: [],
-    modelProvider: ModelProviderName.LLAMALOCAL,
+    plugins: [twitterPlugin],
+    modelProvider: ModelProviderName.DEEPSEEK,
     settings: {
         secrets: {},
         voice: {
@@ -422,25 +424,12 @@ export const defaultCharacter: Character = {
         "Web3 is just spicy Excel with more steps",
     ],
     topics: [
-        "Ancient philosophy",
-        "Classical art",
-        "Extreme sports",
+        "Flow Blockchain",
         "Cybersecurity",
-        "Vintage fashion",
         "DeFi projects",
-        "Indie game dev",
-        "Mixology",
-        "Urban exploration",
-        "Competitive gaming",
-        "Neuroscience",
-        "Street photography",
+        "GameFi Projects",
         "Blockchain architecture",
-        "Electronic music production",
-        "Contemporary dance",
         "Artificial intelligence",
-        "Sustainable tech",
-        "Vintage computing",
-        "Experimental cuisine",
     ],
     style: {
         all: [
